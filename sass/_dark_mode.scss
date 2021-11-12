@@ -1,0 +1,30 @@
+.dark-mode {
+    background-color: rgb(41, 41, 41);
+    color: white;
+    a {
+        color: #60c489 !important;
+    }
+    p {
+        color: #fff !important;
+    }   
+    .nav-link {
+        color: #fff !important;
+    }           
+    .tasse {
+        border: 2px solid #fff;
+        .fillin {
+            background-color: #fff;
+            &:after {
+                background-color: rgb(41, 41, 41);
+            }                         
+        }        
+        .untertasse {
+            background-color: #fff;
+        }                            
+        .smoke {
+            span {
+                background-color: #fff;
+            }
+        }
+    }
+}

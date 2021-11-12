@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% include "partials/coffee_cup.html" %}
+    {% include "partials/social_icons.html" %}
+    <br>
+    <p> {{page.title}} </p>
+    {{page.content|safe}}
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <section id="articles-list">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-sm-12 text-left">
+                    {% include "partials/social_icons.html" %}
+                    <p class="text-center">{{section.title}}</p>
+                    {% if section.pages|length %}
+                        <ul>
+                            {% for article in section.pages %}
+                            <li>
+                                <a href="{{ article.permalink | safe }}">{{ article.title }}</a>
+                                <br>
+                                <small>Published on {{ article.date }}</small>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        <p class="text-center">Currently no articles.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

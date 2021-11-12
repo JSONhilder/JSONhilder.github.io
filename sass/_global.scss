@@ -1,0 +1,112 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #ededed;
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Ubuntu Mono', monospace;
+    p {
+        color: #000 !important;
+        font-size: 17px;
+    }
+    a {
+        color: #496bb4 !important;
+    }
+}
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#hastylink {
+    position: fixed;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    font-size: 13px;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+}
+.logo {
+    margin-top: 20vh;
+}
+.page-wrapper {
+    padding: 10px 40px;
+}
+nav {
+    // padding: 0% 15%;
+    .navbar-brand {
+        font-size: 1rem !important;
+    }
+    .navbar-nav {
+        margin-left: auto;
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+    }
+}
+#theme-switch {
+    cursor: pointer;
+}
+.btn-check {
+    &:active + .btn-outline-light, &:checked + .btn-outline-light {
+        background-color: transparent !important;
+        color: #60c489 !important;
+    }
+}
+.btn-outline-light {
+    &.active, &.dropdown-toggle.show, &:active {
+        background-color: transparent !important;
+        color: #60c489 !important;
+    }
+}
+.btn-check:focus + .btn-outline-light, .btn-outline-light:focus {
+    box-shadow: none !important;
+}
+.text-ender {
+    position: relative;
+    display: inline-block;
+    color: white;
+    &::after {
+        content: "";
+        position: absolute;
+        /* Remove display: inline-block if not required to be on the same line as text etc */
+        display: inline-block;
+        background-color: #949494;
+        vertical-align: top;
+        width: 4px;
+        height: 17px;
+        bottom: 5px;
+        -webkit-animation: blink 1s step-end infinite;
+        animation: blink 1s step-end infinite;
+    }
+}
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+@keyframes blink {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
