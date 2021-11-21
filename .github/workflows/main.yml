@@ -1,6 +1,8 @@
 # On every push this script is executed
-on: push
-braches: main
+on:
+  push:
+    braches:
+      - main
 name: Build and deploy GH Pages
 jobs:
   build:
