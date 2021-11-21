@@ -1,9 +1,8 @@
-# On every push this script is executed
+name: Build and deploy GH Pages
 on:
   push:
     braches:
-      - main
-name: Build and deploy GH Pages
+    - main
 jobs:
   build:
     runs-on: ubuntu-latest
