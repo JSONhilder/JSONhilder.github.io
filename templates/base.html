@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     {% include "partials/head.html" %}
-    <body>
+    <body class="dark-mode">
         {% include "partials/navbar.html" %}
 
         {% block content %} {% endblock %}
@@ -9,9 +9,9 @@
 
         <script>
             window.addEventListener('load', function() {
-                if(localStorage.getItem('dark-mode') !== null) {
+                if(localStorage.getItem('light-mode') !== null) {
                     switchTheme();
-                    document.getElementById('theme-switch').innerHTML = 'Light Mode';
+                    document.getElementById('theme-switch').innerHTML = 'Dark Mode';
                 }
             });
 
@@ -21,12 +21,12 @@
             });
 
             function setThemeHistory() {
-                if(localStorage.getItem('dark-mode') === null) {
-                    localStorage.setItem('dark-mode', true);
-                    document.getElementById('theme-switch').innerHTML = 'Light Mode';
+                if(localStorage.getItem('light-mode') === null) {
+                    localStorage.setItem('light-mode', true);
+                    document.getElementById('theme-switch').innerHTML = 'Dark Mode';
                 } else {
-                    localStorage.removeItem('dark-mode');
-                    document.getElementById("theme-switch").innerHTML = 'Dark Mode';
+                    localStorage.removeItem('light-mode');
+                    document.getElementById("theme-switch").innerHTML = 'Light Mode';
                 }
             }
 
