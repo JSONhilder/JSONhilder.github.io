@@ -12,6 +12,6 @@ So with that idea in mind my first entry is born!
 
 I intend to copy and paste my technical notes and guides along with some occasional rants if I feel strongly enough about a topic.
 
-I do not intend on reaching a large audience with my content, its my own personal space but accessible to everyone who finds it.If someone where to stumble upon this and find something useful great if not... great.
+I do not intend on reaching a large audience with my content, its my own personal space but accessible to everyone who finds it.If someone were to stumble upon this and find something useful great if not... great.
 
 So with that if anyone has found this and is reading, I wish you a great and prosperous 2022, let's all work towards being better humans.
