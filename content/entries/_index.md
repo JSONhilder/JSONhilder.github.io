@@ -1,5 +1,5 @@
 +++
-title = "Arbitary personal entries and whatever else in-between."
+title = "A Collection of sporadic musings."
 sort_by = "date"
 template = "entries.html"
 page_template = "entries-page.html"
