@@ -41,6 +41,13 @@
                 }, 100);
             }
 
+            document.addEventListener('DOMContentLoaded', function() {
+                var paths = window.location.pathname.split('/').filter(n => n);
+                if(paths.length > 1 && paths[0] === 'entries') {
+                    document.querySelector('footer').style.cssText = "position:relative;margin-top:25px;margin-bottom:15px;";
+                }
+            }, false);
+
         </script>
     </body>
     {% include "partials/footer.html" %}
