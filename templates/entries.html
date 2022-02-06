@@ -10,11 +10,13 @@
                     {% if section.pages|length %}
                         <ul>
                             {% for article in section.pages %}
-                            <li>
-                                <a href="{{ article.permalink | safe }}">{{ article.title }}</a>
-                                <br>
-                                <small>Published on {{ article.date }}</small>
-                            </li>
+                                {% if article.draft == false %}
+                                    <Li>
+                                        <a href="{{ article.permalink | safe }}">{{ article.title }}</a>
+                                        <br>
+                                        <small>Published on {{ article.date }}</small>
+                                    </li>
+                                {% endif %}
                             {% endfor %}
                         </ul>
                     {% else %}

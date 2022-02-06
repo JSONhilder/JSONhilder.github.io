@@ -1,6 +1,7 @@
 +++
 title = "Hello world"
 date = "2022-01-31"
+draft = false
 +++
 ---
 
