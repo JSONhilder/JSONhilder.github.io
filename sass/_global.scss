@@ -2,16 +2,19 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-color: #ededed;
-    color: black;
+    background-color: #F2EEDE;
+    color: #3c3836;
     font-family: 'Roboto Mono', monospace;
     font-family: 'Ubuntu Mono', monospace;
     p {
-        color: #000 !important;
+        color: #3c3836 !important;
         font-size: 17px;
     }
     a {
-        color: #496bb4 !important;
+        color: #076678 !important;
+    }
+    h1, h2, h3, h4, h5, h6, .date {
+        color: #586e75 !important;
     }
 }
 footer {
@@ -22,6 +25,10 @@ footer {
     p {
         font-size: 15px !important;
     }
+}
+nav {
+    max-width: 880px;
+    margin:auto;
 }
 .navbar-toggler {
     border: 0 !important;
@@ -80,24 +87,6 @@ nav {
 }
 .btn-check:focus + .btn-outline-light, .btn-outline-light:focus {
     box-shadow: none !important;
-}
-.text-ender {
-    position: relative;
-    display: inline-block;
-    color: white;
-    &::after {
-        content: "";
-        position: absolute;
-        /* Remove display: inline-block if not required to be on the same line as text etc */
-        display: inline-block;
-        background-color: #949494;
-        vertical-align: top;
-        width: 4px;
-        height: 17px;
-        bottom: 5px;
-        -webkit-animation: blink 1s step-end infinite;
-        animation: blink 1s step-end infinite;
-    }
 }
 @-webkit-keyframes blink {
     0% {
