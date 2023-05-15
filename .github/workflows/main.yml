@@ -3,7 +3,7 @@ name: Build and deploy GH Pages
 on:
   push:
     tags:
-      - 'prod-*'
+      - 'live-*'
 jobs:
   build:
     runs-on: ubuntu-latest
