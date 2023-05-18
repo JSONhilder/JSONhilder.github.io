@@ -17,7 +17,7 @@ I think it's helpful to have a more curated list somewhere less ephemeral than m
 
 #### Editors:
 - Neovim + Tmux
-- Vscode (Basically only for the liveshare feature)
+- Vscode (Mainly for the liveshare feature)
 
 #### Shell:
 - zsh
