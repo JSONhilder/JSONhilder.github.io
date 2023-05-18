@@ -1,6 +1,7 @@
 +++
 title = "A Desktop Timelapse"
 date = "2023-05-18"
+draft = false
 +++
 ---
 
