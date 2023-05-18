@@ -4,7 +4,7 @@ date = "2023-05-18"
 +++
 ---
 
-This is another post that I intend to update as my desktop changes, be it small or a complete overhaul.
+This is a post that I intend to update as my desktop changes, be it small or a complete overhaul.
 
 I saw this on someone else's website and thought it was a cool idea, to be able to see over the years how much or how little has changed.
 
