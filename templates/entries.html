@@ -11,7 +11,7 @@
                         <ul>
                             {% for article in section.pages %}
                                 {% if article.draft == false %}
-                                    <Li>
+                                    <Li class="mb-2">
                                         <a href="{{ article.permalink | safe }}">{{ article.title }}</a>
                                         <br>
                                         <small>Published on {{ article.date }}</small>
