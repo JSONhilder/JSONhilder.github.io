@@ -1,45 +1,31 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <section id="intro">
-        <div class="container mt-4 mt-md-5">
-            <div class="row justify-content-center">
-                <div class="col-md-8 col-sm-12">
-                    <p style="letter-spacing: 1.5px;">
-                        <strong> Hi, I'm Jason from sunny Durban, South Africa </strong>
-                    </p>
+    <div class="container">
+        <section>
+            <p style="letter-spacing: 1.5px;">
+                <strong> Hi, I'm Jason from sunny Durban, South Africa </strong>
+            </p>
+            <p>I am a full time software developer as well as a self proclaimed minimalist, obsessed with text editors, mechanical keyboards, Linux and computers in general!</p>
+            <p style="letter-spacing: 1.5px;"><strong>Currently working with but not limited to:</strong></p>
+            <ul>
+                <li>Rust.</li>
+                <li>Golang.</li>
+                <li>Javascript/Typescript.</li>
+                <li>General Web Stack HTML, CSS, SCSS and PHP.</li>
+                <li>Random Bash Scripts that should not see the light of day.</li>
+            </ul>
+            <hr>
+            <div class="row quick-links">
+                <div class="col-8 col-12-md is-center">
+                    <a href="/entries">Entries</a> |
+                    <a target="_blank" href="https://github.com/jasonhilder">Github</a> |
+                    <a target="_blank" href="https://github.com/jasonhilder/dotfiles">Dotfiles</a> |
+                    <a href="/files/cv.html" target="_blank">Resume</a> |
+                    <a href="https://www.linkedin.com/in/jason-hilder/" target="_blank">LinkedIn</a> |
+                    <a href="mailto:jason@jasonhilder.dev" target="_blank">Email</a>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-md-8 col-sm-12">
-                    <p>I am a full time software developer as well as a self proclaimed minimalist, obsessed with text editors, mechanical keyboards, Linux and computers in general!</p>
-                    <p style="letter-spacing: 1.5px;"><strong>Currently working with but not limited to:</strong></p>
-                    <ul>
-                        <li>Rust.</li>
-                        <li>Golang.</li>
-                        <li>Javascript/Typescript.</li>
-                        <li>General Web Stack HTML, CSS, SCSS and PHP.</li>
-                        <li>Random Bash Scripts that should not see the light of day.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-8 col-sm-11 p-0">
-                    <hr>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-11 col-sm-12 text-center">
-                    <p>
-                        <a href="/entries">Entries</a> |
-                        <a target="_blank" href="https://github.com/jasonhilder">Github</a> |
-                        <a target="_blank" href="https://github.com/jasonhilder/dotfiles">Dotfiles</a> |
-                        <a href="/files/cv.html" target="_blank">Resume</a> |
-                        <a href="https://www.linkedin.com/in/jason-hilder/" target="_blank">LinkedIn</a> |
-                        <a href="mailto:jason@jasonhilder.dev" target="_blank">Email</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 {% endblock %}
