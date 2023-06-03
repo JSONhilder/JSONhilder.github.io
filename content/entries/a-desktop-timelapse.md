@@ -14,7 +14,10 @@ I saw this on someone else's website and thought it was a cool idea, to be able 
 <br/>
 
 <img src="/images/desktop-2022-2.png" alt="Desktop 2022 apps" class="img-fluid" />
-(Ubuntu LTS, i3 window manager, alacritty, neovim, vscode dark themed)
+
+||
+|:--:|
+| *Ubuntu LTS, i3 window manager, alacritty, neovim, vscode dark themed* |
 
 <hr/>
 I found that POP_OS had their <a href="https://github.com/pop-os/shell" target="_blank">pop shell</a> tiling feature which could give me i3's functionality with less setup/config.
@@ -25,8 +28,10 @@ I found that POP_OS had their <a href="https://github.com/pop-os/shell" target="
 <br/>
 <br/>
 <img src="/images/desktop-2022-2-2.png" alt="Desktop 2022 second apps" class="img-fluid" />
-(POP_OS, pop-shell tiling, alacritty, neovim, Kanagawa themed)
 
+||
+|:--:|
+| *POP_OS, pop-shell tiling, alacritty, neovim, Kanagawa themed* |
 
 <hr/>
 After a few small changes to the layout and applications this was my desktop for a while.
@@ -37,4 +42,7 @@ After a few small changes to the layout and applications this was my desktop for
 <br/>
 <br/>
 <img src="/images/desktop-2023-2.png" alt="Desktop 2022 second apps" class="img-fluid" />
-(POP_OS, pop-shell tiling, xfce4 terminal, neovim, Jelly-beans themed)
+
+||
+|:--:|
+| *POP_OS, pop-shell tiling, xfce4 terminal, neovim, Jelly-beans themed* |
