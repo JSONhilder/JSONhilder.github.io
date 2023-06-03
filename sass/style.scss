@@ -33,8 +33,9 @@ p{font-size: 15px !important;}
 }
 .last-link {padding:0!important;}
 @media screen and (max-width: 599px) {
-nav {margin-top:15px;}
+footer{position: relative!important;}
+nav{margin-top:15px;}
 .container { padding: 0px 15px; }
-.last-link {padding: 1rem 2rem!important;}
-.quick-links a { font-size: 14px; margin-top: 4px; }
+nav a, .last-link{padding: 0.5rem 1rem!important;}
+.quick-links a { font-size: 14px; margin-top: 4px; display: contents;}
 }
