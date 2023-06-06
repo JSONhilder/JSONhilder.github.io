@@ -4,7 +4,7 @@ date = "2023-06-03"
 draft = false
 +++
 ---
-As a note to myself to remind me when I forget.
+As a note to myself, for when I forget.
 
 I needed to use my split keyboard, a 40% corne layout for anyone interested, but it's configured using VIA.
 
