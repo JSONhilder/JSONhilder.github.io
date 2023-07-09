@@ -46,3 +46,18 @@ After a few small changes to the layout and applications this was my desktop for
 ||
 |:--:|
 | *POP_OS, pop-shell tiling, xfce4 terminal, neovim, Jelly-beans themed* |
+
+<hr/>
+I made the switch to Void Linux, so I had to leave gnome+pop-shell and use xfce+i3.
+<br/>
+<br/>
+
+<img src="/images/desktop-2023-2-1.jpg" alt="Desktop 2023 first wallpaper" class="img-fluid" />
+<br/>
+<br/>
+<img src="/images/desktop-2023-2-2.jpg" alt="Desktop 2023 first apps" class="img-fluid" />
+
+||
+|:---------------------------------------------------------------:|
+| *Void Linux, i3wm, xfce-term, tmux, neovim, Tokyo Night themed* |
+
