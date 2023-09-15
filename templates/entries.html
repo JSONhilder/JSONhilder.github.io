@@ -1,25 +1,24 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div class="container">
+    <main>
         <section id="articles-list">
-            {% include "partials/social_icons.html" %}
-            <p class="is-center">{{section.title}}</p>
+            <p>{{section.title}}</p>
             {% if section.pages|length %}
-                <ul>
+                <ul class="blog-posts">
                     {% for article in section.pages %}
                         {% if article.draft == false %}
-                            <Li class="mb-2">
-                                <a href="{{ article.permalink | safe }}">{{ article.title }}</a>
-                                <br>
-                                <small>Published on {{ article.date }}</small>
+                            <li>
+                                <small>{{ article.date }}</small> &gt; <a href="{{ article.permalink | safe }}">{{ article.title }}</a>
                             </li>
                         {% endif %}
                     {% endfor %}
                 </ul>
             {% else %}
-                <p class="text-center">Currently no articles.</p>
+                <p>Currently no articles.</p>
             {% endif %}
         </section>
-    </div>
+        <hr>
+        {% include "partials/social_icons.html" %}
+    </main>
 {% endblock content %}
