@@ -1,7 +1,6 @@
 +++
 title = "Wanting more out of life."
 date = "2023-07-09"
-draft = false
 +++
 ---
 

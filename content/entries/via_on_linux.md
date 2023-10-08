@@ -1,7 +1,6 @@
 +++
 title = "VIA v3 on Linux"
 date = "2023-06-03"
-draft = false
 +++
 ---
 As a note to myself, for when I forget.
