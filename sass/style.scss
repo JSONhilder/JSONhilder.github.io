@@ -1,20 +1,20 @@
 :root {
     --width: 800px;
-    --font-main: Verdana, sans-serif;
-    --font-secondary: Verdana, sans-serif;
-    --font-scale: 1em;
+    --font-main: system-ui, sans-serif;
+    --font-secondary: system-ui, sans-serif;
+    --font-scale: 1.05em;
 }
 //https://github.com/morhetz/gruvbox-contrib
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color: #3b4252;
-        --heading-color: #e5e9f0;
-        --text-color: #e5e9f0;
-        --link-color: #81a1c1;
-        --visited-color: #b48ead;
-        --code-background-color: #2b303b;
-        --code-color: #ddd;
-        --blockquote-color: #ccc;
+        --background-color: #171616;
+        --heading-color: #f1f1f1;
+        --text-color:  #f1f1f1;
+        --link-color: #9b9b9b;
+        --visited-color: #9b9b9b;
+        //--code-background-color: #f1f1f1;
+        --code-color: #f1f1f1;
+        --blockquote-color: #f1f1f1;
     }
 }
 body {
@@ -38,9 +38,11 @@ a {
     color: var(--link-color);
     cursor: pointer;
     text-decoration: none;
+    transition: 0.4s all ease;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #f1f1f1;
 }
 nav a {
     margin-right: 8px;
@@ -111,7 +113,7 @@ ul.blog-posts {
 ul.blog-posts li {
     display: flex;
     align-items: center;
-    margin-bottom:5px;
+    margin-top:10px;
 }
 ul.blog-posts li small {
     margin-right: 5px;
@@ -119,6 +121,6 @@ ul.blog-posts li small {
 ul.blog-posts li a {
     margin-left: 5px;
 }
-ul.blog-posts li a:visited {
-    color: var(--visited-color);
+ul.blog-posts li a:hover {
+    color: #f1f1f1;
 }
