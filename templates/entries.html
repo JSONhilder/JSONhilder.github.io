@@ -9,8 +9,12 @@
                     {% for article in section.pages %}
                         {% if article.draft == false %}
                             <li>
-                                <small>{{ article.date }}</small> &gt; <a href="{{ article.permalink | safe }}">{{ article.title }}</a>
+                                <a href="{{ article.permalink | safe }}">{{ article.title }}</a>
                             </li>
+                            <small style="margin-left:5px;">Published: {{ article.date }}</small>
+                            {% if article.updated %}
+                                | <small>Modified: {{article.updated}}</small>
+                            {% endif %}
                         {% endif %}
                     {% endfor %}
                 </ul>

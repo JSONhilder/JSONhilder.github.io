@@ -4,7 +4,11 @@
     <div class="container">
         <section id="articles-detail">
             <h1>{{page.title}}</h1>
-            <p class="date">{{page.date}}</p>
+            <p class="date" style="margin-bottom:0;"><small>Published: {{page.date}}</small>
+            {% if page.updated %}
+                | <small>Modified: {{page.updated}}</small>
+            {% endif %}
+            </p>
             {{page.content|safe}}
         </section>
     </div>
