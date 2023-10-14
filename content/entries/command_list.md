@@ -1,6 +1,7 @@
 +++
 title = "Personal Command Reference/Cheat Sheet"
 date = "2023-10-07"
+updated = "2023-10-14"
 +++
 ---
 
@@ -38,6 +39,11 @@ wget -P /path/to/directory URL
 find . -name "*:Zone.Identifier" -type f -delete
 ```
 
+* Get host information
+```
+hostnamectl
+```
+
 * List process listening on port number
 ```
 lsof -i:port_number
@@ -58,7 +64,27 @@ kill -9 $(lsof -t -i:8080)
 nslookup -debug URL
 ```
 
-## NPM
+## Nodenv, Node, Npm
+
+* List all node versions installed
+```
+nodenv versions
+```
+
+* Set global/systems node version 
+```
+nodenv global <version_number> 
+```
+
+* Set global/systems node version 
+```
+nodenv global <version_number> 
+```
+
+* Set current projects node version 
+```
+nodenv local 0.10.0
+```
 
 * List all packages installed globally
 ```
