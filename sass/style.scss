@@ -1,7 +1,7 @@
 :root {
     --width: 800px;
-    --font-main: system-ui, sans-serif;
-    --font-secondary: system-ui, sans-serif;
+    --font-main: consolas, system-ui;
+    --font-secondary: consolas, system-ui;
     --font-scale: 1.05em;
 }
 //https://github.com/morhetz/gruvbox-contrib
@@ -20,6 +20,7 @@
 body {
     font-family: var(--font-secondary);
     font-size: var(--font-scale);
+    letter-spacing: 0.1rem;
     margin: auto;
     padding: 20px;
     max-width: var(--width);
