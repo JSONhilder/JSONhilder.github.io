@@ -1,8 +1,8 @@
 :root {
     --width: 800px;
-    --font-main: consolas, system-ui;
-    --font-secondary: consolas, system-ui;
-    --font-scale: 1.05em;
+    --font-main: sans-serif;
+    --font-secondary: sans-serif;
+    --font-scale: 1em;
 }
 //https://github.com/morhetz/gruvbox-contrib
 @media (prefers-color-scheme: dark) {
@@ -20,7 +20,6 @@
 body {
     font-family: var(--font-secondary);
     font-size: var(--font-scale);
-    letter-spacing: 0.1rem;
     margin: auto;
     padding: 20px;
     max-width: var(--width);
@@ -34,6 +33,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-main);
     color: var(--heading-color);
+}
+p {
+    letter-spacing: 0.5px !important;
 }
 a {
     color: var(--link-color);
