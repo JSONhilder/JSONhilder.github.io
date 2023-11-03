@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Jason Hilder</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/jpg" href="https://jasonhilder.dev/images/favicon.ico"/>
+    <link href="/style.css" rel="stylesheet">
+</head>
+
+    <body>
+        <header>
+    <a class="title" href="/">
+        <h1> Jason Hilder </h1>
+    </a>
+    <nav>
+        <p> <a href="/">Home</a> <a href="/entries">Entries</a> <a href="mailto:jason@jasonhilder.dev">Contact Me</a> </p>
+    </nav>
+</header>
+
+        
+    <div class="container">
+        <section id="articles-detail">
+            <h1>Personal Command Reference&#x2F;Cheat Sheet</h1>
+            <p class="date" style="margin-bottom:0;"><small>Published: 2023-10-07</small>
+            
+                | <small>Modified: 2023-10-14</small>
+            
+            </p>
+            <hr />
+<p>Some common commands that I often forget and have to google for flags etc.</p>
+<h2 id="linux">Linux</h2>
+<ul>
+<li>Unzip a tar archive to current location</li>
+</ul>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>tar -xf filename.tar.gz
+</span></code></pre>
+<ul>
+<li>Unzip a tar archive to specific location</li>
+</ul>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>tar -xf file.name.tar -C /path/to/directory
+</span></code></pre>
+<ul>
+<li>Zip with gzip a folder/file as a tar archive</li>
+</ul>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>tar -czf newfile.tar.gz file_to_be_zipped
+</span></code></pre>
+<ul>
+<li>Create symbolic link to a file/folder</li>
+</ul>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>ln -s path/to/file_folder /path/to/link/location
+</span></code></pre>
+<ul>
+<li>Download file from url to specific location</li>
+</ul>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>wget -P /path/to/directory URL
+</span></code></pre>
+<ul>
+<li>Find and delete all zone.identifier files (wsl specific quirk/pain)</li>
+</ul>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>find . -name &quot;*:Zone.Identifier&quot; -type f -delete
+</span></code></pre>
+<ul>
+<li>Get host information</li>
+</ul>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>hostnamectl
+</span></code></pre>
+<ul>
+<li>List process listening on port number</li>
+</ul>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>lsof -i:port_number
+</span></code></pre>
+<ul>
+<li>Kill process on port number</li>
+</ul>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>kill $(lsof -t -i:port_number)
+</span></code></pre>
+<ul>
+<li>Violently kill (-9 SIGKILL - terminate immediately/hard kill)</li>
+</ul>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>kill -9 $(lsof -t -i:8080)
+</span></code></pre>
+<ul>
+<li>Lookup details on a domain</li>
+</ul>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>nslookup -debug URL
+</span></code></pre>
+<h2 id="nodenv-node-npm">Nodenv, Node, Npm</h2>
+<ul>
+<li>List all node versions installed</li>
+</ul>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>nodenv versions
+</span></code></pre>
+<ul>
+<li>Set global/systems node version </li>
+</ul>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>nodenv global &lt;version_number&gt; 
+</span></code></pre>
+<ul>
+<li>Set global/systems node version </li>
+</ul>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>nodenv global &lt;version_number&gt; 
+</span></code></pre>
+<ul>
+<li>Set current projects node version </li>
+</ul>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>nodenv local 0.10.0
+</span></code></pre>
+<ul>
+<li>List all packages installed globally</li>
+</ul>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>npm list -g --depth 0
+</span></code></pre>
+
+        </section>
+    </div>
+    <div style="text-align:center;">
+    <div> <a target="_blank" href="https://www.linkedin.com/in/jason-hilder/">LinkedIn</a> | <a target="_blank" href="https://github.com/jasonhilder">Github</a> | <a href="mailto:jason@jasonhilder.dev" target="_blank">Email</a> </div>
+</div>
+
+
+    </body>
+    <footer>
+    <p style="margin:0;"><small>Made with <a target="_blank" href="https://www.getzola.org/">zola</a> 2023 </small></p>
+    <p style="margin:0;"><small>This site does not track any information and is intentionally small each page being ~14kb. </small></p>
+</footer>
+
+</html>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://jasonhilder.dev/</loc>
+    </url>
+    <url>
+        <loc>https://jasonhilder.dev/entries/</loc>
+    </url>
+    <url>
+        <loc>https://jasonhilder.dev/entries/a-desktop-timelapse/</loc>
+        <lastmod>2023-05-18</lastmod>
+    </url>
+    <url>
+        <loc>https://jasonhilder.dev/entries/command-list/</loc>
+        <lastmod>2023-10-14</lastmod>
+    </url>
+    <url>
+        <loc>https://jasonhilder.dev/entries/hello-world/</loc>
+        <lastmod>2022-01-31</lastmod>
+    </url>
+    <url>
+        <loc>https://jasonhilder.dev/entries/into-the-void/</loc>
+        <lastmod>2023-06-22</lastmod>
+    </url>
+    <url>
+        <loc>https://jasonhilder.dev/entries/my-software-toolbox/</loc>
+        <lastmod>2023-05-15</lastmod>
+    </url>
+    <url>
+        <loc>https://jasonhilder.dev/entries/via-on-linux/</loc>
+        <lastmod>2023-06-03</lastmod>
+    </url>
+    <url>
+        <loc>https://jasonhilder.dev/entries/wanting-more-from-life/</loc>
+        <lastmod>2023-07-09</lastmod>
+    </url>
+</urlset>

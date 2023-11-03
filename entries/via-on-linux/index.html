@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Jason Hilder</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/jpg" href="https://jasonhilder.dev/images/favicon.ico"/>
+    <link href="/style.css" rel="stylesheet">
+</head>
+
+    <body>
+        <header>
+    <a class="title" href="/">
+        <h1> Jason Hilder </h1>
+    </a>
+    <nav>
+        <p> <a href="/">Home</a> <a href="/entries">Entries</a> <a href="mailto:jason@jasonhilder.dev">Contact Me</a> </p>
+    </nav>
+</header>
+
+        
+    <div class="container">
+        <section id="articles-detail">
+            <h1>VIA v3 on Linux</h1>
+            <p class="date" style="margin-bottom:0;"><small>Published: 2023-06-03</small>
+            
+            </p>
+            <hr />
+<p>As a note to myself, for when I forget.</p>
+<p>I needed to use my split keyboard, a 40% corne layout for anyone interested, but it's configured using VIA.</p>
+<p>I used it previously on my Ubuntu install and made use of the deb image, but currently I am on Void Linux and had to make use of either the appimage.</p>
+<p>After downloading it <a href="https://github.com/the-via/releases/releases" target="_blank">here</a> as well as giving the app image permission to execute with <code>chmod +x</code>, it didn't work, running the app image in the terminal gave me the following error:</p>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>UnhandledPromiseRejectionWarning: Error:....
+</span><span>
+</span><span>/bin/bash: line 1: /etc/udev/rules.d/92-viia.rules: No such file or directory
+</span><span>
+</span><span>...
+</span></code></pre>
+<p>I found <a href="https://get.vial.today/manual/linux-udev.html" target="_blank" >this article</a> on configuring udev which helped me fix the issue, by first making the directory with the file:</p>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>/etc/udev/rules.d/92-viia.rules
+</span></code></pre>
+<p>and then adding the following content:</p>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>KERNEL==&quot;hidraw*&quot;, SUBSYSTEM==&quot;hidraw&quot;, MODE=&quot;0666&quot;, TAG+=&quot;uaccess&quot;, TAG+=&quot;udev-acl&quot;
+</span></code></pre>
+<p>You can read up more on tweaking that specific udev rule in the article linked, but in my case this was enough to get VIA working as I needed.</p>
+
+        </section>
+    </div>
+    <div style="text-align:center;">
+    <div> <a target="_blank" href="https://www.linkedin.com/in/jason-hilder/">LinkedIn</a> | <a target="_blank" href="https://github.com/jasonhilder">Github</a> | <a href="mailto:jason@jasonhilder.dev" target="_blank">Email</a> </div>
+</div>
+
+
+    </body>
+    <footer>
+    <p style="margin:0;"><small>Made with <a target="_blank" href="https://www.getzola.org/">zola</a> 2023 </small></p>
+    <p style="margin:0;"><small>This site does not track any information and is intentionally small each page being ~14kb. </small></p>
+</footer>
+
+</html>
